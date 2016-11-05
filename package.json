@@ -1,0 +1,37 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "Hello graphql world",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify client.js -o bundle.js",
+    "start": "micro -p 3000"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "author": "Dhi Aurrahman",
+  "license": "ISC",
+  "dependencies": {
+    "graphiql": "0.7.8",
+    "graphql": "0.7.2",
+    "isomorphic-fetch": "2.2.1",
+    "micro": "6.1.0",
+    "react": "15.3.2",
+    "react-dom": "15.3.2"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "6.18.0",
+    "babel-preset-react": "6.16.0",
+    "babelify": "7.3.0",
+    "browserify": "13.1.1"
+  }
+}
